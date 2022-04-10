@@ -11,5 +11,8 @@
   "license": "ISC",
   "dependencies": {
     "@11ty/eleventy": "^1.0.0"
+  },
+  "devDependencies": {
+    "prettier": "2.6.2"
   }
 }
