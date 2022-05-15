@@ -11,7 +11,8 @@
   "license": "ISC",
   "dependencies": {
     "@11ty/eleventy": "^1.0.0",
-    "@11ty/eleventy-cache-assets": "^2.3.0"
+    "@11ty/eleventy-cache-assets": "^2.3.0",
+    "moment": "^2.29.3"
   },
   "devDependencies": {
     "prettier": "2.6.2"
