@@ -21,6 +21,13 @@ module.exports = config => {
     config.addCollection('featuredWork', collection => {
       return sortByDisplayOrder(collection.getFilteredByGlob('./src/work/*.md')).filter(x => x.data.featured);
     });
+
+    // Returns a list of people ordered by filename
+    config.addCollection('people', collection => {
+      return collection.getFilteredByGlob('./src/people/*.md').sort((a, b) => {
+        return Number(a.fileSlug) > Number(b.fileSlug) ? 1 : -1;
+    });
+  });
     return {
         markdownTemplateEngine: 'njk',
         dataTemplateEngine: 'njk',
